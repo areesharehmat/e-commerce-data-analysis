@@ -1,0 +1,170 @@
+-- ==========================================
+-- Query: revenuecontr.sql
+-- ==========================================
+       Category  revenue_share_percent
+     Technology                   36.4
+      Furniture                   32.3
+Office Supplies                   31.3
+
+-- ==========================================
+-- Query: profitmargin.sql
+-- ==========================================
+       Category  profit_margin_percent
+     Technology                  17.40
+Office Supplies                  17.04
+      Furniture                   2.49
+
+-- ==========================================
+-- Query: viewfunc.sql (category_performance)
+-- ==========================================
+       category   revenue    profit
+      Furniture 741999.80  18451.27
+Office Supplies 719047.03 122490.80
+     Technology 836154.03 145454.95
+
+-- ==========================================
+-- Query: staterankedbyprofit.sql
+-- ==========================================
+               State    profit  rank
+          California  76381.39     1
+            New York  74038.55     2
+          Washington  33402.65     3
+            Michigan  24463.19     4
+            Virginia  18597.95     5
+             Indiana  18382.94     6
+             Georgia  16250.04     7
+            Kentucky  11199.70     8
+           Minnesota  10823.19     9
+            Delaware   9977.37    10
+          New Jersey   9772.91    11
+           Wisconsin   8401.80    12
+        Rhode Island   7285.63    13
+            Maryland   7031.18    14
+       Massachusetts   6785.50    15
+            Missouri   6436.21    16
+             Alabama   5786.83    17
+            Oklahoma   4853.96    18
+            Arkansas   4008.69    19
+         Connecticut   3511.49    20
+              Nevada   3316.77    21
+         Mississippi   3172.98    22
+                Utah   2546.53    23
+             Vermont   2244.98    24
+           Louisiana   2196.10    25
+            Nebraska   2037.09    26
+             Montana   1833.33    27
+      South Carolina   1769.06    28
+       New Hampshire   1706.50    29
+                Iowa   1183.81    30
+          New Mexico   1157.12    31
+District of Columbia   1059.59    32
+              Kansas    836.44    33
+               Idaho    826.72    34
+               Maine    454.49    35
+        South Dakota    394.83    36
+        North Dakota    230.15    37
+       West Virginia    185.92    38
+             Wyoming    100.20    39
+              Oregon  -1190.47    40
+             Florida  -3399.30    41
+             Arizona  -3427.92    42
+           Tennessee  -5341.69    43
+            Colorado  -6527.86    44
+      North Carolina  -7490.91    45
+            Illinois -12607.89    46
+        Pennsylvania -15559.96    47
+                Ohio -16971.38    48
+               Texas -25729.36    49
+
+-- ==========================================
+-- Query: rankcategoriesbyrevenue.sql
+-- ==========================================
+       Category  revenue  rank
+     Technology   452.71     1
+      Furniture   349.83     2
+Office Supplies   119.32     3
+
+-- ==========================================
+-- Query: discountswnegloss.sql
+-- ==========================================
+ Discount  profit
+     0.50 -310.70
+     0.45 -226.65
+     0.40 -111.93
+     0.80 -101.80
+     0.70  -95.87
+     0.32  -88.56
+     0.30  -45.68
+     0.60  -43.08
+
+-- ==========================================
+-- Query: avgprofitbydiscount.sql
+-- ==========================================
+ Discount  profit
+     0.10   96.06
+     0.00   66.90
+     0.15   27.29
+     0.20   24.70
+     0.60  -43.08
+     0.30  -45.68
+     0.32  -88.56
+     0.70  -95.87
+     0.80 -101.80
+     0.40 -111.93
+     0.45 -226.65
+     0.50 -310.70
+
+-- ==========================================
+-- Query: shippingmodeprofit.sql
+-- ==========================================
+     Ship Mode    profit
+Standard Class 164088.79
+  Second Class  57446.64
+   First Class  48969.84
+      Same Day  15891.76
+
+-- ==========================================
+-- Query: shippingmoderevenue.sql
+-- ==========================================
+     Ship Mode     profit
+Standard Class 1358215.74
+  Second Class  459193.57
+   First Class  351428.42
+      Same Day  128363.12
+
+-- ==========================================
+-- Query: profitsegement.sql
+-- ==========================================
+    Segment    profit
+   Consumer 134119.21
+  Corporate  91979.13
+Home Office  60298.68
+
+-- ==========================================
+-- Additional Overview Queries
+-- ==========================================
+Total Transactions: 9994
+Total Revenue: 2297200.86
+Total Profit: 286397.02
+Average Sale: 229.86
+Average Profit: 28.66
+
+Sub-Category Summary:
+Sub-Category     Sales    Profit
+ Accessories 167380.32  41936.64
+  Appliances 107532.16  18138.01
+         Art  27118.79   6527.79
+     Binders 203412.73  30221.76
+   Bookcases 114880.00  -3472.56
+      Chairs 328449.10  26590.17
+     Copiers 149528.03  55617.82
+   Envelopes  16476.40   6964.18
+   Fasteners   3024.28    949.52
+ Furnishings  91705.16  13059.14
+      Labels  12486.31   5546.25
+    Machines 189238.63   3384.76
+       Paper  78479.21  34053.57
+      Phones 330007.05  44515.73
+     Storage 223843.61  21278.83
+    Supplies  46673.54  -1189.10
+      Tables 206965.53 -17725.48
